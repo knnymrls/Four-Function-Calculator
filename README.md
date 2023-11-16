@@ -1,7 +1,7 @@
 # Four-Function Calculator
 
 ## Project Website
-Live Demo:
+Live Demo: https://knnymrls.github.io/Four-Function-Calculator/
 
 ## Overview
 This project is a web-based Four-Function Calculator that enables users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. It's designed with HTML, CSS, and JavaScript, offering a clean, intuitive interface and keyboard support for efficient input.
