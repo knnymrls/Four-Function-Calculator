@@ -1,4 +1,4 @@
-# Four-Function Calculator
+# Four-Function Calculator ➕➖✖️➗
 
 ## Project Website
 Live Demo: https://knnymrls.github.io/Four-Function-Calculator/
