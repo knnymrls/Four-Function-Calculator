@@ -1,0 +1,122 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.calculator-container {
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 400px; /* Increased width */
+}
+
+.calculator-screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  background-color: #444;
+  border-radius: 5px;
+  color: white;
+  font-size: 3em; /* Increased font size */
+  margin-bottom: 20px;
+  padding: 15px;
+  height: 100px; /* Increased height */
+}
+
+.calculator-screen-main-container {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+#calculator-screen-additional-container {
+  color: white;
+  font-size: 16px;
+}
+
+.calculator-top-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calculator-number-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button,
+.calculator-clear-button,
+.calculator-delete-button {
+  background-color: #555;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 25px 0px;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+.calculator-clear-button:hover,
+.calculator-delete-button:hover {
+  background-color: #777;
+}
+
+.number-button-division,
+.number-button-multiplication,
+.number-button-subtraction,
+.number-button-addition,
+.number-button-equals {
+  background-color: #f90;
+}
+
+.number-button-division:hover,
+.number-button-multiplication:hover,
+.number-button-subtraction:hover,
+.number-button-addition:hover,
+.number-button-equals:hover {
+  background-color: rgb(250, 100, 0);
+}
+
+button:active {
+  transform: scale(0.95); /* Slightly scale down the button */
+  background-color: #333; /* Change color to give feedback */
+}
+
+button:hover {
+  background-color: #666; /* Change background color */
+  cursor: pointer; /* Change cursor to a pointer */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.calculator-container {
+  animation: fadeIn 5s ease-in-out;
+}
+
+.calculator-screen-container {
+  transition: all 0.3s ease;
+}

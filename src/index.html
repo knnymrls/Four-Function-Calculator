@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Four-Function Calculator</h1>
+    <div class="calculator-container">
+        <div class="calculator-screen-container" id="calculator-screen-container">
+            <div class="calculator-screen-main-container" id="calculator-screen-additional-container"></div>
+            <div class="calculator-screen-main-container" id="calculator-screen-main-container"></div>
+        </div>
+        <div class="calculator-buttons-container">
+            <div class="calculator-top-buttons-container">
+                <div class="calculator-clear-button" onclick="clearCalculator()">CLEAR</div>
+                <div class="calculator-delete-button" onclick="deleteCalculator()">DELETE</div>
+            </div>
+            <div class="calculator-number-buttons-container">
+                <button class="number-button7" onclick="addToCurrentNum('7')">7</button>
+                <button class="number-button8" onclick="addToCurrentNum('8')">8</button>
+                <button class="number-button9" onclick="addToCurrentNum('9')">9</button>
+                <button class="number-button-division" onclick="saveNum(), saveOperator('/')">/</button>
+                <button class="number-button4" onclick="addToCurrentNum('4')">4</button>
+                <button class="number-button5" onclick="addToCurrentNum('5')">5</button>
+                <button class="number-button6" onclick="addToCurrentNum('6')">6</button>
+                <button class="number-button-multiplication" onclick="saveNum(), saveOperator('*')">x</button>
+                <button class="number-button1" onclick=" addToCurrentNum('1')">1</button>
+                <button class="number-button2" onclick=" addToCurrentNum('2')">2</button>
+                <button class="number-button3" onclick=" addToCurrentNum('3')">3</button>
+                <button class="number-button-subtraction" onclick="saveNum(), saveOperator('-')">-</button>
+                <button class="number-button-decimal" onclick=" addToCurrentNum('.')">.</button>
+                <button class="number-button0" onclick=" addToCurrentNum('0')">0</button>
+                <button class="number-button-equals" onclick="compute()">=</button>
+                <button class="number-button-addition" onclick="saveNum(), saveOperator('+')">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
